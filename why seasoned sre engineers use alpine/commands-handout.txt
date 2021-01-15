@@ -1,0 +1,39 @@
+Vim editor:
+-----------
+If you want to open a file (or create a new one):
+$ vim new_file.txt
+
+and when in the vim push "i" key on your keyboard to go to '-- INSERT --' mode.
+
+If you want to save, press "esc" key and write ":x" and press enter.
+
+
+Docker commands used:
+---------------------
+$ Docker pull alpine
+|---> This command pulls the image to your local machine, but doesn't run it.
+
+$ Docker images
+|---> See the images present on your machine
+
+$ Docker search alpine
+|---> Search for images on Docker repository. (recommended to use official images)
+
+$ Docker run --rm -ti alpine sh
+|---> This one has a long story, we use this to run Docker images.
+|---- --rm: is used to delete the image after you are done (not to keep it running)
+|--- -ti: means run the "sh" command and stay in the terminal and let me interact with it
+|--- alpine: is the image name
+|--- sh: is the terminal of choice for Alpine. Note that Alpine doesn't have Bash
+
+Installing software on Alpine:
+------------------------------
+$ apk add --update --no-cache git
+|---> to add new packages
+|---- --update: instead of running 'apk update' beforehand. This updates the repo with the latest versions
+|---- --no-cache: do not cache the package on the local machine
+|---- git: the package you want to install
+
+Installing software on Ubuntu:
+------------------------------
+$ apt-get update && apt-get install git
