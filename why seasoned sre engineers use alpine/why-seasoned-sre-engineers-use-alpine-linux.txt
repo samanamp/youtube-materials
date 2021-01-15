@@ -1,0 +1,11 @@
+VIDEO LINK: https://youtu.be/iQmNmJRgDxI
+Why every seasoned SRE engineer uses Alpine linux?
+
+- What is Alpine linux
+- How Alpine linux compares to others (demo with docker)
+- How fast Alpine linux is? (compare with Ubuntu)
+- Why we use Alpine on Kubernetes? (demo with sample python and node packages)
+
+BONUS: Run commands with me and you will refresh your Docker knowledge.
+
+P.S. This is VIM, you should know basics of it to work as DevOps/SRE engineer!
